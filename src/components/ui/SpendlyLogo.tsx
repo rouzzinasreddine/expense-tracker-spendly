@@ -13,6 +13,7 @@ export function SpendlyLogo({ size = 32, withText = false }: SpendlyLogoProps) {
         alt="Spendly Logo"
         width={size}
         height={size}
+        priority
         className="shrink-0 rounded-xl shadow-sm"
       />
       {withText && (

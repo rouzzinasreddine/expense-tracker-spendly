@@ -81,11 +81,13 @@ export default function LoginPage() {
             <p className="text-slate-400 text-sm mt-2">Welcome back to your account</p>
           </div>
 
-          {error && (
-            <div className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-xl text-red-400 text-sm text-center lg:text-left">
-              {error}
-            </div>
-          )}
+          <div className="min-h-[72px] mb-6">
+            {error && (
+              <div className="h-full p-4 bg-red-500/10 border border-red-500/20 rounded-xl text-red-400 text-sm text-center lg:text-left">
+                {error}
+              </div>
+            )}
+          </div>
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
