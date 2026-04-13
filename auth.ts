@@ -3,9 +3,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 import { PrismaClient } from "@prisma/client";
 
-const prisma = new PrismaClient({
-  datasourceUrl: "file:./dev.db",
-});
+const prisma = new PrismaClient({});
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [

@@ -4,9 +4,7 @@ import bcrypt from "bcryptjs";
 import { PrismaClient } from "@prisma/client";
 import { authConfig } from "./auth.config";
 
-const prisma = new PrismaClient({
-  datasourceUrl: "file:./dev.db",
-});
+const prisma = new PrismaClient();
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   ...authConfig,
