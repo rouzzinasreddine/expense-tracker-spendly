@@ -9,7 +9,7 @@ const prisma = new PrismaClient({
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   providers: [
-    CredentialsProvider({                                                                             nm
+    CredentialsProvider({
       name: "Credentials",
       credentials: {
         email: { label: "Email", type: "email" },
