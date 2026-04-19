@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* ─── Nocturne Ledger Design Tokens ─────────────────────────────────────── */
 @theme inline {
   /* Colors */
@@ -54,11 +56,6 @@
 
   --color-outline:                  #908fa0;
   --color-outline-variant:          #464554;
-
-  /* Fonts */
-  --font-sans:               var(--font-sans);
-  --font-mono:               var(--font-mono);
-  --font-headline:           var(--font-headline);
 
   /* Border Radius */
   --radius:       0.25rem;
